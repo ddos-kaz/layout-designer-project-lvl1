@@ -1,4 +1,29 @@
-/** CSS STYLE **/
+/** Defining Fonts **/
+@font-face {
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-weight: italic;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+/** Main CSS Styles **/
+
 .color-white {
   color: #fff;
 }
@@ -43,6 +68,12 @@ body {
   line-height: 1.6em;
 }
 
+header,
+footer,
+main {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -63,11 +94,8 @@ h3 {
   font-size: 34px;
 }
 
-.section-box {
+.container {
   max-width: 1100px;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0;
 }
