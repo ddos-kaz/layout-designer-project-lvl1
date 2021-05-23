@@ -79,21 +79,23 @@ h4 {
   line-height: 1.2em;
 }
 
-.h1-fs {
+h1 {
   font-size: 72px;
 }
 
-.h2-fs {
+h2 {
   font-size: 60px;
 }
 
-.h3-fs {
+h3 {
   font-size: 34px;
 }
 
-.container {
+.z-index-20 {
   z-index: 20;
+}
 
+.container {
   max-width: 1110px;
   margin: 0 auto;
 
@@ -110,6 +112,14 @@ h4 {
 
 .margin-right-30 {
   margin-right: 30px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /** HEADER **/
@@ -172,4 +182,22 @@ h4 {
   text-decoration: none;
 
   background-color: #fe8a02;
+}
+
+/** Video Container **/
+.shadow-filter {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.video {
+  margin-bottom: -200px;
+
+  border: 0;
+}
+
+/** Navigation Container **/
+.container-navigation {
+  height: 300px;
+
+  background-color: #2a2626;
 }
