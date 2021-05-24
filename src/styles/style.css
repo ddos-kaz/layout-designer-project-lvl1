@@ -118,8 +118,16 @@ h3 {
   margin-bottom: 30px;
 }
 
+.margin-top-16 {
+  margin-top: 16px;
+ }
+
 .align-center {
   text-align: center;
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 /** HEADER **/
@@ -196,8 +204,49 @@ h3 {
 }
 
 /** Navigation Container **/
-.container-navigation {
-  height: 300px;
+.container-navigation-bg {
+  position: relative;
 
-  background-color: #2a2626;
+  background-color: #42413c;
+}
+
+.card-nav-text-size {
+  font-size: 52px;
+}
+
+.container-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 200px;
+}
+
+.main-navigation-card {
+  flex: 1;
+  width: 350px;
+  height: 323px;
+
+  font-weight: normal;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+}
+
+.navigation-card {
+  width: 350px;
+  height: 323px;
+
+  padding: 24px;
+
+  font-weight: normal;
+
+  background-color: #f5f4f0;
+}
+
+.card-nav-number {
+  display: block;
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: Neucha, sans-serif;
+  line-height: 1em;
 }
