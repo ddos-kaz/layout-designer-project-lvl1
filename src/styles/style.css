@@ -23,6 +23,62 @@
 } */
 
 /** Main CSS Styles **/
+* {
+  box-sizing: border-box;
+}
+
+.d-wrapper {
+  padding: 100px 0;
+}
+
+.d-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  box-shadow: 0 0 0 1px red;
+}
+
+.d-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col {
+  padding: 0 20px;
+
+  box-shadow: 0 0 0 1px blue;
+}
+
+.padding-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.col-6 {
+  width: calc(100% / (12 / 6));
+}
+
+.col-3 {
+  width: calc(100% / (12 / 3));
+}
+
+.col-4 {
+  width: calc(100% / (12 / 4));
+}
+
+.col-5 {
+  width: calc(100% / (12 / 5));
+}
+
+.col-8 {
+  width: calc(100% / (12 / 8));
+}
+
+.col-2 {
+  width: calc(100% / (12 / 2));
+}
+
 .color-white {
   color: #fff;
 }
@@ -111,8 +167,8 @@ h3 {
   margin-top: 150px;
 }
 
-.padding-top-200 {
-  padding-top: 200px;
+.padding-top-50 {
+  padding-top: 50px;
 }
 
 .font-weight-normal {
