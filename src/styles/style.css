@@ -23,6 +23,10 @@
 } */
 
 /** Main CSS Styles **/
+* {
+  box-sizing: border-box;
+}
+
 .color-white {
   color: #fff;
 }
@@ -35,7 +39,7 @@
   color: #f5f4f0;
 }
 
-.color-main {
+.color-primary {
   color: #fe8a02;
 }
 
@@ -47,7 +51,7 @@
   color: #2a2626;
 }
 
-.color-dark-transparent {
+.color-secondary {
   color: #908d8b;
 }
 
@@ -60,7 +64,6 @@
 }
 
 body {
-  box-sizing: border-box;
   margin: 0;
 
   color: #2a2626;
@@ -75,6 +78,7 @@ h2,
 h3,
 h4 {
   font-weight: normal;
+  font-style: normal;
   font-family: Neucha, sans-serif;
 
   line-height: 1.2em;
@@ -92,43 +96,42 @@ h3 {
   font-size: 34px;
 }
 
+.font-family-neucha {
+  font-weight: normal;
+  font-family: Neucha, sans-serif;
+
+  line-height: 1.2em;
+}
+
 /*** Padding and Margin styles ***/
 .margin-top-0 {
   margin-top: 0;
 }
 
-.margin-top-5 {
-  margin-top: 6px;
-}
-
-.margin-right-30 {
-  margin-right: 30px;
-}
-
-.margin-top-150 {
-  margin-top: 150px;
+.margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 .margin-top-180 {
   margin-top: 180px;
 }
 
-.padding-top-200 {
-  padding-top: 200px;
-}
-
 .padding-top-100 {
   padding-top: 100px;
 }
 
-.margin-bottom-200 {
+.margin-bottom-neg-200 {
   margin-bottom: -200px;
 }
 
-.margin-top-20 {
-  margin-top: 20px;
+.padding-x-15 {
+  padding: 0 15px;
 }
 
+.margin-x-neg-15 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 /*** End of Padding and Margin styles ***/
 
 .z-index-10 {
@@ -155,54 +158,30 @@ h3 {
   text-align: center;
 }
 
-/*** Containers ***/
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.vertical-align-middle {
+  vertical-align: middle;
 }
 
+/*** Containers ***/
 .container {
-  position: relative;
-
   max-width: 1110px;
   margin: 0 auto;
 
   padding: 100px 0;
 }
 
-.header-container {
-  max-width: 1110px;
-  margin: 0 auto;
-
-  padding: 0 15px;
-}
-
-.header-container-row {
+.row {
   display: flex;
   flex-wrap: wrap;
-
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.column {
-  padding: 0 15px;
+  justify-content: space-between;
 }
 
 .column-6 {
-  width: 50%;
+  width: calc(100% / 2);
 }
 
-.header-block-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header-block {
-  flex-grow: 1;
-
-  width: calc(50% - 15px);
+.column-4 {
+  width: calc(100% / 3);
 }
 
 .container-background-light {
@@ -242,13 +221,6 @@ h3 {
   align-items: center;
 }
 
-.container-navigation {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between; */
-}
-
 /** HEADER **/
 .header-image {
   position: absolute;
@@ -256,24 +228,6 @@ h3 {
   right: -270px;
 
   height: 525px;
-}
-
-.header-text-block {
-  columns: 2;
-  column-gap: 30px;
-}
-
-.header-text-block p {
-  margin-top: 0;
-  break-inside: avoid;
-}
-
-.header-text-block p:first-of-type {
-  break-after: column;
-}
-
-.header-text-block p:last-of-type {
-  margin-bottom: 0;
 }
 
 .header-btn {
@@ -290,6 +244,10 @@ h3 {
   background-color: #fe8a02;
 }
 
+.header-btn:hover {
+  background-color: #ea7600;
+}
+
 /** Video Container **/
 .shadow-filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
@@ -304,35 +262,20 @@ h3 {
   text-decoration: none;
 }
 
-.container-navigation-bg {
-  position: relative;
-
-  background-color: #42413c;
-}
-
-.card-nav-text-size {
-  font-weight: normal;
+.font-size-52 {
   font-size: 52px;
-  font-family: Neucha, sans-serif;
-  line-height: 1.2em;
 }
 
 .navigation-card {
-  position: relative;
-
-  height: 323px;
-
-  font-weight: normal;
-  font-style: normal;
+  height: 100%;
 }
 
-.main-navigation-card {
-  position: relative;
+.navigation-card:hover {
+  background-color: #fe8a02;
+}
 
-  height: 323px;
-
-  font-weight: normal;
-  font-style: normal;
+.navigation-card:hover * {
+  color: #fff;
 }
 
 .card-nav-number {
@@ -344,37 +287,8 @@ h3 {
   line-height: 1em;
 }
 
-.nav-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.nav-col-4 {
-  width: calc((100% /3) - 20px);
-}
-
-.navigation-card:hover {
-  color: #fff;
-
-  background-color: #fe8a02;
-}
-
-.navigation-card:hover * {
-  color: #fff;
-}
-
 .row-gap-20 {
   row-gap: 20px;
-}
-
-.column-gap-30 {
-  column-gap: 30px;
-}
-
-.flex-1 {
-  flex: 1;
 }
 
 .padding-24 {
@@ -383,4 +297,25 @@ h3 {
 
 .background-color-white {
   background-color: #f5f4f0;
+}
+
+/*** IKEA CONTAINER ***/
+.ikea-image {
+  width: 100%;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.ikea-breaking-text {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 0 5px 10px;
+
+  color: #fff;
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+
+  background-color: #B09A81;
 }
