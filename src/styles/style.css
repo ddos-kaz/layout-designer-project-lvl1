@@ -78,8 +78,8 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  font-style: normal;
   font-family: Neucha, sans-serif;
+  font-style: normal;
 
   line-height: 1.2em;
 }
@@ -131,6 +131,10 @@ h3 {
 .margin-x-neg-15 {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
 }
 /*** End of Padding and Margin styles ***/
 
@@ -188,8 +192,8 @@ h3 {
   background-color: #f5f4f0;
 }
 
-.container-background-white {
-  background-color: #fff;
+.container-background-brown {
+  background-color: #b09a81;
 }
 
 .container-background-dark {
@@ -300,7 +304,7 @@ h3 {
 }
 
 /*** IKEA CONTAINER ***/
-.ikea-image {
+.width-100 {
   width: 100%;
 }
 
@@ -314,8 +318,26 @@ h3 {
   padding: 5px 0 5px 10px;
 
   color: #fff;
+
+  font-weight: bold;
   font-size: 14px;
   font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
 
   background-color: #B09A81;
+}
+
+.premature-optimization-breaking-text {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 0 5px 10px;
+
+  color: #B09A81;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  background-color: #fff;
 }
