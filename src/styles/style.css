@@ -25,6 +25,7 @@
 /** Main CSS Styles **/
 * {
   box-sizing: border-box;
+  margin-top: 0;
 }
 
 .color-white {
@@ -114,6 +115,10 @@ h3 {
 
 .margin-bottom-9 {
   margin-bottom: 9px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
 }
 
 .margin-top-180 {
@@ -310,7 +315,7 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.video {
+.border-none {
   border: none;
 }
 
@@ -341,7 +346,7 @@ h3 {
 
   font-size: 64px;
   font-family: Neucha, sans-serif;
-  line-height: 1em;
+  line-height: 1;
 }
 
 .row-gap-20 {
