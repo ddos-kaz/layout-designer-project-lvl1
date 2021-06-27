@@ -77,6 +77,9 @@ h1,
 h2,
 h3,
 h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: normal;
   font-family: Neucha, sans-serif;
   font-style: normal;
@@ -348,6 +351,10 @@ h3 {
   height: 100%;
 }
 
+.navigation-card p {
+  margin-bottom: 0;
+}
+
 .navigation-card:hover {
   background-color: #fe8a02;
 }
@@ -398,7 +405,7 @@ h3 {
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
 
-  background-color: #b09ab1;
+  background-color: #b09a81;
 }
 
 .line-breaking-text-white {
