@@ -344,6 +344,7 @@ h3 {
 }
 
 .navigation-card {
+  display: block;
   height: 100%;
 }
 
