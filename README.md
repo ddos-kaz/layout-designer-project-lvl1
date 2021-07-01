@@ -3,4 +3,4 @@
 
 ---
 # 'Cognitive biases' Landing Page
-Link to landing page: [ddos-kz-congnitive-biases.surge.sh](ddos-kz-congnitive-biases.surge.sh "Cognitive biases")
+Link to landing page: [ddos-kz-congnitive-biases.surge.sh](http://ddos-kz-congnitive-biases.surge.sh "Cognitive biases")
