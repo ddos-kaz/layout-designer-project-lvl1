@@ -121,7 +121,6 @@ h3,
   background-color: var(--main-dark-color);
 }
 
-.bg,
 .bg-questions {
   position: relative;
 
@@ -301,11 +300,6 @@ img {
   border: none;
 }
 
-.footer-title-section {
-  display: flex;
-  align-items: center;
-}
-
 /** Atomic CSS **/
 .display-flex {
   display: flex;
@@ -381,10 +375,6 @@ img {
   margin-top: 70px;
 }
 
-.margin-bottom-15 {
-  margin-bottom: 15px;
-}
-
 .padding-top-100 {
   padding-top: 100px;
 }
@@ -427,4 +417,8 @@ img {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.align-self-center {
+  align-self: center;
 }
